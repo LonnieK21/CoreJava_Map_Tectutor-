@@ -5,6 +5,6 @@ public class TaxNotEligibleException extends Exception {
 	@Override
 	public String getMessage()
 	{
-		return "TaxNotEligibleException";
+		return "The employee does not need to pay tax";
 	}
 }

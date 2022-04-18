@@ -9,7 +9,7 @@ public class TaxCalculator {
 	public double calculateTax(String empName, double salary,boolean isIndian)
 			throws CountryNotValidException, EmployeeNameInvalidException, TaxNotEligibleException
 	{
-		double taxAmount=0;
+		double taxAmount;
 		this.salary=salary;
 		this.isIndian=isIndian;
 		this.empName=empName;
@@ -22,16 +22,16 @@ public class TaxCalculator {
 		}
 		if(salary > 100000 && isIndian) 
 		{
-			taxAmount = salary * (8/100);
+			taxAmount = salary * .08;
 		} else if(salary > 50000 && salary < 100000 && isIndian) 
 		{
-			taxAmount = salary * (6/100);
+			taxAmount = salary * .06;
 		} else if(salary > 30000 && salary < 50000 && isIndian) 
 		{
-			taxAmount = salary * (5/100);
+			taxAmount = salary * .05;
 		} else if(salary > 10000 && salary < 30000 && isIndian) 
 		{
-			taxAmount = salary * (4/100);
+			taxAmount = salary * .04;
 		}else 
 		{
 			throw new TaxNotEligibleException();

@@ -5,6 +5,6 @@ public class EmployeeNameInvalidException extends Exception {
 	@Override
 	public String getMessage()
 	{
-		return "EmployeeNameInvalidException";
+		return "The employee name cannot be empty";
 	}
 }
