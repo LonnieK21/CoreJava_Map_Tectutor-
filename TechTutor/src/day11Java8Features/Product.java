@@ -3,6 +3,7 @@ package day11Java8Features;
 public class Product {
 	private int productid;
 	private String productname;
+	private double price;
 	public Product(int productid, String productname, double price) {
 		super();
 		this.productid = productid;
@@ -13,7 +14,6 @@ public class Product {
 	{
 		
 	}
-	private double price;
 	public int getProductid() {
 		return productid;
 	}
